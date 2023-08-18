@@ -1,0 +1,23 @@
+
+.container-slider img {
+    width: 100%;
+    height: 40rem;
+    object-fit: cover;
+}
+.controls-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: .5rem;
+}
+.controls-slider button {
+    padding: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: background-color .3s ease;
+}
+.controls-slider button:hover {
+    background-color: brown;
+}

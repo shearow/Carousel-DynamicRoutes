@@ -1,0 +1,63 @@
+.shopp-section {
+    text-align: center;
+}
+.shopp-title {
+    padding: 2rem 0;
+    color: #ffffff;
+    font-size: 2.5rem;
+}
+.shopp-section .spinner {
+    margin: 0 auto;
+    height: 15rem;
+}
+.container-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    gap: 3rem;
+}
+@media (min-width: 400px) {
+    .container-products {
+        grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    }
+}
+.card-product {
+    border: .1rem solid burlywood;
+    padding: 1rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: .5rem;
+    height: 40rem;
+    overflow: hidden;
+    outline: .1rem solid rgba(71, 71, 72, 0.219);
+    outline-offset: -1rem;
+}
+.card-product h3 {
+    font-size: 1.8rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.card-product img {
+    flex-grow: 1;
+    object-fit: contain;
+    overflow: hidden;
+}
+.card-product button,
+.card-product a {
+    padding: 1rem;
+    color: #ffffff;
+    font-weight: bold;
+    transition: filter .3s ease;
+}
+.card-product button:hover,
+.card-product a:hover {
+    filter: brightness(1.5);
+}
+.card-product .card-price {
+    cursor: pointer;
+    background-color: brown;
+    box-shadow: 0 0 1rem .1rem #f11414a1;
+}
+.card-product .card-info {
+    background-color: rgb(47, 4, 4);
+}
